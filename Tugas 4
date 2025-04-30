@@ -1,0 +1,18 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+
+Route::get('/mahasiswa/{nama}', function ($nama) {
+    return ('Tampilkan data mahasiwa bernama : '.$nama);
+}); 
+
+Route::get('/stok_barang/{nama}', function ($nama) {
+    return ('Cek sisa stok untuk : '.$nama);
+}); 
+
+
+
+Route::get('/user/{user}', function ($user) {
+    return ('Tampilkan user dengan id : '.$user);
+});
